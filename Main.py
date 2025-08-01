@@ -52,7 +52,7 @@ while True:
                 cv2.putText(frame, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
 
                 
-                if conf > 0.95 and not clicked and result.names[class_id] == 'ripple':  
+                if conf > 0.55 and not clicked and result.names[class_id] == 'ripple':  
                     pyautogui.click()
                     time.sleep(3)
                     pyautogui.click()
